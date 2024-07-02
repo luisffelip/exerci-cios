@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+</head>
+<body>
+    <h1>Parágrafos e quebras de linha</h1>
+    <hr>
+    <p>Você pode escrever um parágrafo de qualquer jeito. Basta colocar tudo no meio do par de tags p e / p</p>
+    <p>Se precisar quebrar o texto em algum lugar específico <br> como esse, voce pode usar a tag <code>&lt;br&gt;</code></p>
+    <!-- Less than / Greater than -->
+
+    <p>Vamos adicionar alguns símbolos especiais:</p>
+    &reg; 
+    <!-- marca registrada -->
+    &copy;
+    <!-- copyright -->
+    &trade;
+    <!-- Marca registrada em ingles-->
+    &euro;
+    &dollar;
+    &real;
+    &uparrow; 
+    <!-- uarr -->
+    &downarrow;
+    &Delta;
+
+    <br>
+    <p>Vamos adicionar alguns emojis:
+        &#x1F920;
+        <!-- &#x -->
+    </p>
+    <hr>
+    <h1>Principais formatações</h1>
+    <h2>
+        Negrito/destaque
+    </h2>
+    <p>Nesta frase temos um <b>termo em negrito</b>usando a tag B (não semântica)</p>
+    <p>Nesta frase temos temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag <code>&lt;i&gt;</code> não semântica</p>
+    <p>Nesta frase, temos um <em>termo em itálico</em> usando a tag <code>&lt;em&gt;</code></p>
+
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Estamos criando um <big>Texto grande</big> e um <small>texto pequeno</small> nesse parágrafo</p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark style="background-color: rgb(0, 208, 255);">texto marcado</mark> usando a tag <code>&lt;mark&gt;</code></p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag <code>&lt;u&gt; </code>(não semântica)</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>x<sup>2</sup>+32=10</p>
+
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+    <h2>Texto invertido</h2>
+    <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>
+
+    <hr>
+
+    <h1>
+        Trabalhando com <mark>listas</mark>
+    </h1>
+    <h2>Listas Ordenadas</h2>
+    <p>A ordem faz diferença.</p>
+    <ol type="I"> 
+        <!-- 1 A a I i -->
+        <li>Acordar</li>
+        <li>Devocionar</li>
+        <li>Estudar</li>
+        <li>Ir para a academia</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul>
+        <!-- disc circle square -->
+        <li>Banana</li>
+        <li>Neston</li>
+        <li>Aveia</li>
+        <li>Pasta de amendoim</li>
+        <li>Leite</li>
+        <li>Batata doce</li>
+    </ul>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Clipper </li>
+            <li>Visual basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol>
+            <li>PHP</li>
+            <li>Phyton</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>
+        Listas de definições
+    </h2>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+
+    <hr>
+
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a target="_blank" href="https://github.com/luisffelip">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a target="_blank" rel="external" href="https://www.youtube.com/@VCProducoes-rf5gn">canal gratuito no YouTube</a></p>
+    <h2>Links internos</h2>
+    <p>Esta é a primira página do meu site. Se você quiser, pode ir para <a href="pag002.html">segunda página</a></p>
+</body>
+</html>
