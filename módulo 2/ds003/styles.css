@@ -81,7 +81,6 @@ nav > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin-right: 30px;
     font-size: 15px;
     padding: 10px;
     border-radius: 5px;
@@ -117,9 +116,7 @@ h2 {
     width: 100%;
 }    
 
-p {
-    text-align: center;
-    justify-content: center;
+p {   
     text-indent: 50px;
 }
 
