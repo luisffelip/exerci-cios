@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
     <style>
+        @charset "UTF-8";
         @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
@@ -13,67 +14,89 @@
             --font2: "Passion One", sans-serif;
             --font3: 'Sriracha' , 'cursive;';
         }
-        body{
-            margin: 0;
-            padding: 0;
+
+        * {
+            margin: 0px;
+            padding: 0px;
         }
+
+        html , body {
+            min-width: 100vh;
+            background-color: darkgray;
+        }
+
         header {
             background-color: black;
             color: white;
-            padding: 20px;
-            margin: auto;
-            display: flexbox;
-            height: 32.4vh;
-            align-items: center;
-            justify-content: center;
-
+            text-align: center;
         }
 
-        h1 {
-            font-family: var(--font2);
-            font-size: 8vw;
-            display: flex;
-            margin: auto;
-
-            left: 50%;
-            top: 50%;
-            
+        header > h1 {
+            padding-top: 50px;
+            font-variant: small-caps;
         }
 
-        p {
-            font-family: var(--font3);
-         
+        header > p {
+            padding-bottom: 50px;
         }
 
-        a {
+      header a , footer , a {
             color: white;
             text-decoration: none;
+            font-weight: bolder;
+        }
 
+        header a:hover , footer a:hover {
+            text-decoration:underline;
+        }
+
+        section {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            padding-left: 30px;
+        }
+
+        .normal {
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        .imagem{
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+
+        .imagem > p {
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.119);
         }
 
         footer {
-            color: white;
             background-color: black;
-            margin: 0;
-            display: flex;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Cordel Moderno</h1>
-        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p>
+        <p>Por <a target="_blank" href="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p>
     </header>
     <main>
-        <p>Estou ficando cansado <br>
-            Da tal tecnologia <br>
-            Só se fala por e-mail <br>
-            Mensagem curta e fria <br>
-            Twitter e Facebook <br>
-            Antes que eu caduque <br>
-            Vou dizer tudo em poesia.</p> 
+        <section class="normal">
+            <p>Estou ficando cansado <br>
+                Da tal tecnologia <br>
+                Só se fala por e-mail <br>
+                Mensagem curta e fria <br>
+                Twitter e Facebook <br>
+                Antes que eu caduque <br>
+                Vou dizer tudo em poesia.</p>
+        </section>
            
-            <div>
+            <section class="imagem">
                 <p>
                     Não é mais como era antes <br>
                     É tudo abreviado <br>
@@ -83,27 +106,28 @@
                     Basta botar uma flor <br>
                     E um coração desenhado.
                 </p>
-            </div>
+            </section>
 
-        <p>Arroba agora não pesa <br>
-            É parte de um endereço <br>
-            Ponto final nem se usa <br>
-            Ou vai até no começo <br>
-            Agora é .com <br>
-            Se o saite é muito bom <br>
-            Ele vale um alto preço.</p> 
+        <section class="normal">
+            <p>Arroba agora não pesa <br>
+                É parte de um endereço <br>
+                Ponto final nem se usa <br>
+                Ou vai até no começo <br>
+                Agora é .com <br>
+                Se o saite é muito bom <br>
+                Ele vale um alto preço.</p>
+            <p>
+                Pra piorar a liguagem <br>
+                O emoticom é um risco <br>
+                Tem símbolo para tudo <br>
+                Ponto e vírgula e um asterisco<br>
+                Um beijo significa <br>
+                Pra entender como fica <br>
+                Decifre esse rabisco.
+            </p>
+        </section>
 
-        <p>
-            Pra piorar a liguagem <br>
-            O emoticom é um risco <br>
-            Tem símbolo para tudo <br>
-            Ponto e vírgula e um asterisco<br>
-            Um beijo significa <br>
-            Pra entender como fica <br>
-            Decifre esse rabisco.
-        </p>
-
-            <div>
+            <section class="imagem">
                 <p>
                     Tenho saudade das cartas <br>
                     Escritas com a própria mão <br>
@@ -113,32 +137,33 @@
                     Era texto de verdade <br>
                     Nas linhas do coração.
                 </p>
-            </div>
+            </section>
 
-        <p>
-            Agora, escrevo e envio <br>
-            Chegando na mesma hora <br>
-            Mas quando vou prosear <br>
-            A pessoa foi embora <br>
-            Abriu outro aplicativo <br>
-            O mundo ficou cativo <br>
-            Da tecnologia do agora.
-        </p>
-
-        <p>
+        <section class="normal">
             <p>
-                Felizmente, pra orar <br>
-                Não precisa de internet <br>
-                Deus escuta todo mundo <br> 
-                Se quiser, faça esse teste <br>
-                Dois pontos são dois joelhos <br>
-                Seus lábios são aparelhos <br>
-                Deixe que Deus interprete. 
+                Agora, escrevo e envio <br>
+                Chegando na mesma hora <br>
+                Mas quando vou prosear <br>
+                A pessoa foi embora <br>
+                Abriu outro aplicativo <br>
+                O mundo ficou cativo <br>
+                Da tecnologia do agora.
             </p>
-        </p>
+            <p>
+                <p>
+                    Felizmente, pra orar <br>
+                    Não precisa de internet <br>
+                    Deus escuta todo mundo <br>
+                    Se quiser, faça esse teste <br>
+                    Dois pontos são dois joelhos <br>
+                    Seus lábios são aparelhos <br>
+                    Deixe que Deus interprete.
+                </p>
+            </p>
+        </section>
     </main>
     <footer>
-        <p>Site criado por <a href="https://gustavoguanabara.github.io/">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/">CursoemVideo</a></p>
+        <p>Site criado por <a target="_blank" href="https://gustavoguanabara.github.io/">Gustavo Guanabara</a> para o <a target="_blank" href="https://www.cursoemvideo.com/">CursoemVideo</a></p>
     </footer>
 </body>
 </html>
