@@ -47,7 +47,7 @@ header a:hover , footer a:hover {
     text-decoration:underline;
 }
 
-main {
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -55,6 +55,10 @@ main {
     font-family: var(--font3);
     font-size: 3.5vw;
 }
+
+section > p {
+    padding-bottom: 2em;
+} 
 
 .normal {
     background-color: white;
@@ -64,12 +68,26 @@ main {
 .imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.656);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.119);
+    background-color: rgba(0, 0, 0, 0.478);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img-01 {
+    background-image: url(../img-dsf/background001.jpg);
+    background-position: right center;
+    
+}
+
+#img-02 {
+    background-image: url(../img-dsf/background002.jpg);
 }
 
 footer {
@@ -77,4 +95,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 2vw;
 }
