@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Testando o uso de iframe</h1>
@@ -14,7 +26,50 @@
     <hr>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam recusandae, quas blanditiis nemo placeat quo veritatis totam! Necessitatibus quos repudiandae eos magni maxime porro dolorem ratione ut corporis voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, dolorem molestiae beatae adipisci laudantium quia minus nobis maiores error officia, et temporibus unde ad esse odio necessitatibus ullam sunt.</p>
-    <iframe src="" frameborder="0"></iframe>
+    <iframe src="../módulo 3/exercícios/ex008/tabela04.html" frameborder="0" height="350" width="500">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam recusandae, quas blanditiis nemo placeat quo veritatis totam! Necessitatibus quos repudiandae eos magni maxime porro dolorem ratione ut corporis voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium, dolorem molestiae beatae adipisci laudantium quia minus nobis maiores error officia, et temporibus unde ad esse odio necessitatibus ullam sunt.</p>
+
+    <hr>
+
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A hic beatae magnam minima accusantium expedita voluptate iste veniam? Necessitatibus veniam laborum error quia eum nemo, non aliquam reiciendis iusto nam!</p>
+
+    <ul>
+        <li><a target="frame" href="../módulo 2/ds003/index.html">Primeira página</a></li>
+        <li><a target="frame" href="../módulo 3/exercícios/index.html">Segunda página</a></li>
+        <li><a target="frame" href="../módulo 3/exercícios/ex008/tabela02.html">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae mollitia maxime nostrum minus fuga obcaecati iure officiis non, quod perferendis omnis, laboriosam quibusdam ea animi? Minima in magni voluptatum? Veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, odit. Esse quas nisi sint maxime ullam dicta obcaecati fugit fugiat repellendus eveniet fuga dolor aspernatur delectus explicabo, accusamus saepe est!</p>
+
+    <iframe id="tela" name="frame" src="" >
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptate, aspernatur distinctio vel ab dolore, iste dolorem, dicta molestiae eligendi non reiciendis laboriosam iure facere blanditiis suscipit! Itaque, quaerat nostrum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sapiente adipisci tenetur est nihil placeat at quasi vero, libero voluptatum itaque, quis, consectetur magnam dicta praesentium error ea quo voluptate!</p>
+
+    <hr>
+
+    <h1>Cadastre-se aqui</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadastrar">
+        </p>
+    </form>
+
+    <hr>
+
+    <h1>Conteúdos dentro de iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae ea nostrum laudantium ipsa omnis laboriosam aliquam perferendis suscipit asperiores. Dicta placeat rem aut distinctio sapiente iure molestiae odio beatae!</p>
+    <h2>Vídeos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_OKAwz2MsJs?si=a4PEG4_8yRsfK2dQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Mapas do google </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.850704458658!2d-38.9391344!3d-12.2583807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7143770940e55a5%3A0x34856bbd92c91f32!2sDOM%20Vertical%20Home%20(MA.ALMEIDA%20ENGENHARIA)!5e0!3m2!1spt-BR!2sbr!4v1721842509634!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Em tempo real</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-12.258153&lon=-38.938999&ct=livemap" width="600" height="450" allowfullscreen></iframe>
 </body>
 </html>
